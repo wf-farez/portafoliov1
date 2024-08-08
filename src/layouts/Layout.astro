@@ -9,7 +9,7 @@ import Principal from '../components/Principal.astro';
 import Title from '../components/Title.astro';
 import {  dataRS , type IDataRS} from '../helpers/Data';
 import { dataProjects, type IProject } from '../helpers/ProjectsData';
-import Layoutcss from '../styles/Layout.css';
+
 
 
 interface Props {
@@ -26,7 +26,6 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="../styles/Layoutcss.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -36,7 +35,7 @@ const { title } = Astro.props;
 
 		<NavBar/>
 
-		<Layoutcss>
+	
 			<main >
 				<Conteiners id="" class="pb-10 pt-10" _style="">
 					<Intro/>
@@ -91,8 +90,26 @@ const { title } = Astro.props;
 				</Conteiners>
 		
 			</main>
-		</Layoutcss>
-		
+	
 	</body>
 </html>
 
+
+<style>
+main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+}
+
+</style>
