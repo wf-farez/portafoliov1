@@ -1,0 +1,22 @@
+---
+import GitHubIcon from "./Icons/GitHubIcon.astro";
+import LinkedInIcon from "./Icons/LinkedInIcono.astro";
+
+const {name, link, icons} = Astro.props;
+---
+<a 
+class="h-15 w-56 bg-slate-900  bottom-2 border border-white text-white  rounded-2xl shadow-md  hover:bg-blue-950 hover:shadow-green-200"
+href={link}
+target="_blank"
+>
+<div class="flex justify-center gap-x-3">
+
+    {
+     name === "Linkedin" ? <LinkedInIcon class="size-6 text-white my-4  "  /> :
+
+     name === "Github" ? <GitHubIcon class="size-6 text-white my-4 "  /> : ""  
+     } <span class="pt-3">{name}</span>
+
+     </div>
+
+</a>

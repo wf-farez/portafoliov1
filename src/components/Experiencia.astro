@@ -1,0 +1,35 @@
+
+
+---
+import { dataExperiencie, type IDataExperiencie } from "../helpers/ExperienceData";
+---
+
+
+{
+    dataExperiencie.map((r):  IDataExperiencie => (
+      <div
+        class="relative flex flex-col mt-6   text-gray-700 bg-slate-950 border border-1 border-white  shadow-md bg-clip-border rounded-xl hover:bg-blue-950 hover:shadow-orange-200"
+      >
+        <div class="p-6">
+          <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-white">
+           <span>&rarr;</span> {' '}{r.role}
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-white">
+          {r.company}
+          </p>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-white">
+          {r.address}
+          </p>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-white">
+          {r.duration}
+          </p>
+
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-white">
+          {r.aptitudes}
+          </p>
+
+
+        </div>
+      </div>
+    ))
+  }

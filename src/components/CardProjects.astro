@@ -1,0 +1,37 @@
+---
+const { href, title, descriptions, img, active } = Astro.props;
+---
+
+<div>
+
+    <h1 class="text-white mt-9 mb-4"> {title}</h1>
+ 
+    {active == 1 && (  <figure class="relative h-80 w-full">
+        <img
+          class="h-full w-full rounded-xl object-cover object-center"
+          src={img}
+          alt="projects image"
+        />
+       
+        <figcaption class="absolute bottom-10 left-2/4 flex w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-blue-400 bg-blue-950 py-4 px-6 shadow-lg shadow-black/5 saturate-50 backdrop-blur-sm">
+
+          <div>
+
+            <a href={href} target="_blank" class="block font-sans text-base antialiased font-light leading-relaxed text-white">
+                {descriptions}
+          </a>
+
+          </div>
+
+            <a  href={href} target="_blank" >
+            Ver
+            </a>
+
+        </figcaption>
+
+       
+
+
+      </figure>) }
+  
+</div>
