@@ -17,6 +17,16 @@ export type IDataRS = {
       link: "https://github.com/wf-farez",
       icons: "Github",
     },
+
+    {
+        name: "Correo",
+        link: "",
+        icons: "Correo",
+      },
+  
+
+
+
   ];
   
 
