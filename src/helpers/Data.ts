@@ -16,13 +16,14 @@ export type IDataRS = {
       name: "Github",
       link: "https://github.com/wf-farez",
       icons: "Github",
-    },
+     }
+    ,
 
-    {
-        name: "Correo",
-        link: "",
-        icons: "Correo",
-      },
+    // {
+    //     name: "Correo",
+    //     link: "",
+    //     icons: "Correo",
+    //   },
   
 
 
